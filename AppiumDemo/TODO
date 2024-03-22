@@ -1,0 +1,41 @@
+学习appium基本语法
+    学习xpath语法
+    学习appium基本用法  appium --base-path /wd/hub    --启动服务
+查阅微信的包名与活动页面名称
+    com.tencent.mm
+    ui.LauncherUI（adb shell dumpsys window | grep mCurrentFocus）
+        能不能设置其他的开始activity-->权限问题？-- 已解决
+找到微信小程序的.wxapkg保存位置
+    还没找到 -- 已解决
+    /data/data/com.tencent.mm/MicroMsg/892d5604ef0076c8be2a5f7491cd8b87/appbrand/pkg        要开adb root
+    adb pull /data/data/com.tencent.mm/MicroMsg/892d5604ef0076c8be2a5f7491cd8b87/appbrand/pkg ./PycharmProjects/AppiumDemo/pkg
+编写基本点击语法
+    基本语法没啥问题，微信的登录限制太多了，待解决 -- 已解决
+    小程序页面定位不到元素，待解决---换了一种点小程序的页面，，，可是现在还是定位不过去！！！服
+完善代码
+
+
+work：
+https://blog.csdn.net/qq_33282850/article/details/130616564
+https://www.cnblogs.com/alantammm/p/10601180.html
+https://github.com/drizzle888/wxappUnpacker
+
+sb bug：
+https://developers.weixin.qq.com/community/develop/doc/00064e2c288520f14e0b5305c56400
+
+？？：
+https://blog.csdn.net/chenjxj123/article/details/127845229
+
+
+adb shell input tap 100 100
+adb shell input swipe 100 100 100 100 1000
+
+x ==500
+
+414
+727
+1025 
+1351
+1666
+
+1978---414
