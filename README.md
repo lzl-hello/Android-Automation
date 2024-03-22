@@ -85,7 +85,9 @@ Q：微信小程序.wxapkg的存储位置?
 A:
 ```
 adb pull /data/data/com.tencent.mm/MicroMsg/{User}/appbrand/pkg ./
+
 ```
+反转了，在这个目录下找到了：/data/data/com.tencent.mm/MicroMsg/appbrand/pkg
 
 ***
 Q:如何获取activity和包名
